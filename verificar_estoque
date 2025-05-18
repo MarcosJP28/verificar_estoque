@@ -1,0 +1,99 @@
+def verificar_estoque(produtos):
+    alto = 0
+    medio = 0
+    baixo = 0
+
+    for nome, quantidade in produtos.items():
+        if quantidade > 10:
+            print(f"{nome}: Estoque ALTO")
+            alto += 1
+        elif 5 <= quantidade <= 10:
+            print(f"{nome}: Estoque MÉDIO")
+            medio += 1
+        else:
+            print(f"{nome}: Estoque BAIXO")
+            baixo += 1
+
+    print("\nResumo:")
+    print("Produtos com estoque ALTO:", alto)
+    print("Produtos com estoque MÉDIO:", medio)
+    print("Produtos com estoque BAIXO:", baixo)
+
+
+# Dicionário com os produtos e suas quantidades
+estoque = {
+    "Mouse Gamer": 12,
+    "Teclado Mecânico": 8,
+    "Notebook Pro": 3,
+    "Webcam HD": 15,
+    "Headset Bluetooth": 4,
+    "Cabo HDMI": 6
+}
+
+verificar_estoque(estoque)
+
+
+
+          # Verificador de Estoque | Stock Checker | 在庫チェッカー
+
+---
+
+## 🇧🇷 Português (Brasil)
+
+### Sobre o projeto:
+
+Este é um script simples em Python que classifica produtos de acordo com seu nível de estoque.  
+Ele divide os produtos em três categorias:
+
+- **Estoque ALTO:** mais de 10 unidades  
+- **Estoque MÉDIO:** entre 5 e 10 unidades  
+- **Estoque BAIXO:** menos de 5 unidades
+
+No final, exibe o total de produtos em cada categoria.
+
+### Como usar:
+
+1. Execute o script no seu ambiente Python.
+2. O resultado será impresso no terminal, mostrando a classificação de cada produto e o resumo final.
+
+---
+
+## 🇺🇸 English (US)
+
+### About the project:
+
+This is a simple Python script that classifies products based on their stock quantity.  
+It separates items into three categories:
+
+- **HIGH stock:** more than 10 units  
+- **MEDIUM stock:** between 5 and 10 units  
+- **LOW stock:** less than 5 units
+
+At the end, it prints the total count of products in each category.
+
+### How to use:
+
+1. Run the script in your Python environment.  
+2. The result will be printed in the terminal, showing the classification of each product and the final summary.
+
+---
+
+## 🇯🇵 日本語 (Japanese)
+
+### プロジェクトについて：
+
+このPythonスクリプトは、在庫数に基づいて商品を分類します。  
+3つのカテゴリーに分けられます：
+
+- **在庫が多い (HIGH)：** 10個以上  
+- **在庫が普通 (MEDIUM)：** 5～10個  
+- **在庫が少ない (LOW)：** 5個未満
+
+最後に、それぞれのカテゴリに属する商品の合計数が表示されます。
+
+### 使い方：
+
+1. Python環境でスクリプトを実行してください。  
+2. 結果がターミナルに表示され、商品の分類と要約が確認できます。
+
+---
